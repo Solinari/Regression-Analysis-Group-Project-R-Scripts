@@ -10,17 +10,17 @@ summary(SQF.2012$age)
 # thr: 25 to 34
 # fou: 35 to 99
 # fiv: 100 to 999
-SQF.2012$ChildToTeens <- factor ( with ( SQF.2012, ifelse((age < 18),1,0 ) ) );
-SQF.2012$EighteenPlus <- factor ( with ( SQF.2012, ifelse((17 < age < 25),1,0 ) ) );
-SQF.2012$TwentyToThirtyish <- factor ( with ( SQF.2012, ifelse((24 < age < 35),1,0 ) ) );
-SQF.2012$ThirtyFivePlus <- factor ( with ( SQF.2012, ifelse ((34 < age < 100),1, 0) ) );
+SQF.2012$ChildToTeens <- factor ( with ( SQF.2012, ifelse( (age < 18),1,0 ) ) );
+SQF.2012$EighteenPlus <- factor ( with ( SQF.2012, ifelse( ( (17 < age) && (age < 25) ),1,0 ) ) );
+SQF.2012$TwentyToThirtyish <- factor ( with ( SQF.2012, ifelse( ( (24 < age) && (age < 35) ),1,0 ) ) );
+SQF.2012$ThirtyFivePlus <- factor ( with ( SQF.2012, ifelse ( ( (34 < age) && (age < 100) ),1, 0) ) );
 SQF.2012$HundPlus <- factor ( with ( SQF.2012, ifelse ((age > 99),1, 0) ) );
 
 
 #Frisks
-ChildToTeensFrisk <- lm(frisked ~ SQF$ChildToTeens, data=SQF.2012)
-EighteenPlusFrisk <- lm(frisked ~ SQF$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishFrisk <- lm(frisked ~ SQF$TwentyToThirtyish, data=SQF.2012)
+ChildToTeensFrisk <- lm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012)
+EighteenPlusFrisk <- lm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012)
+TwentyToThirtyishFrisk <- lm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
 ThirtyFivePlusFrisk <- lm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
 HundPlusFrisk <- lm(frisked ~ SQF.2012$HundPlus, data=SQF.2012)
 
@@ -57,9 +57,9 @@ attach(SQF.2012)
 SQF.2012$weaponfound <- pistol+riflshot+asltweap+knifcuti+machgun+othrweap
 
 #Weapons
-ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF$ChildToTeens, data=SQF.2012)
-EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF$TwentyToThirtyish, data=SQF.2012)
+ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012)
+EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012)
+TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
 ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
 HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012)
 
