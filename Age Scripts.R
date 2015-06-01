@@ -10,10 +10,11 @@ summary(SQF.2012$age)
 # thr: 25 to 34
 # fou: 35 to 99
 # fiv: 100 to 999
+
 SQF.2012$ChildToTeens <- factor ( with ( SQF.2012, ifelse( (age < 18),1,0 ) ) );
-SQF.2012$EighteenPlus <- factor ( with ( SQF.2012, ifelse( ( (17 < age) && (age < 25) ),1,0 ) ) );
-SQF.2012$TwentyToThirtyish <- factor ( with ( SQF.2012, ifelse( ( (24 < age) && (age < 35) ),1,0 ) ) );
-SQF.2012$ThirtyFivePlus <- factor ( with ( SQF.2012, ifelse ( ( (34 < age) && (age < 100) ),1, 0) ) );
+SQF.2012$EighteenPlus <- factor ( with ( SQF.2012, ifelse( ( (17 < age) & (age < 25) ),1,0 ) ) );
+SQF.2012$TwentyToThirtyish <- factor ( with ( SQF.2012, ifelse( ( (24 < age) & (age < 35) ),1,0 ) ) );
+SQF.2012$ThirtyFivePlus <- factor ( with ( SQF.2012, ifelse ( ( (34 < age) & (age < 100) ),1, 0) ) );
 SQF.2012$HundPlus <- factor ( with ( SQF.2012, ifelse ((age > 99),1, 0) ) );
 
 
@@ -62,6 +63,13 @@ EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.
 TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
 ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
 HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012)
+
+#general summaries
+summary(ChildToTeens)
+summary(EighteenPlus)
+summary(TwentyToThirtyish)
+summary(ThirtyFivePlus)
+summary(HundPlus)
 
 #Summary - Frisk
 summary(ChildToTeensFrisk)
