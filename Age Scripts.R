@@ -19,99 +19,99 @@ SQF.2012$HundPlus <- factor ( with ( SQF.2012, ifelse ((age > 99),1, 0) ) );
 
 
 #Frisks
-ChildToTeensFrisk <- lm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusFrisk <- lm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishFrisk <- lm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusFrisk <- lm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusFrisk <- lm(frisked ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensFrisk <- lm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusFrisk <- lm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishFrisk <- lm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusFrisk <- lm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusFrisk <- lm(frisked ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #Searches
-ChildToTeensSearch <- lm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusSearch <- lm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishSearch <- lm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusSearch <- lm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusSearch <- lm(searched ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensSearch <- lm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusSearch <- lm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishSearch <- lm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusSearch <- lm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusSearch <- lm(searched ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #Contraband
-ChildToTeensContra <- lm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusContra <- lm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishContra <- lm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusContra <- lm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusContra <- lm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensContra <- lm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusContra <- lm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishContra <- lm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusContra <- lm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusContra <- lm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #Arrests
-ChildToTeensArrest <- lm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusArrest <- lm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishArrest < - lm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusArrest <- lm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusArrest <- lm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensArrest <- lm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusArrest <- lm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishArrest <- lm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusArrest <- lm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusArrest <- lm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #Summons 
-ChildToTeensSummon <- lm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusSummon <- lm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishSummon <- lm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusSummon <- lm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusSummon <- lm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensSummon <- lm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusSummon <- lm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishSummon <- lm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusSummon <- lm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusSummon <- lm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012);
 
 # make the weapon variable
 attach(SQF.2012)
-SQF.2012$weaponfound <- pistol+riflshot+asltweap+knifcuti+machgun+othrweap
+SQF.2012$weaponfound <- pistol+riflshot+asltweap+knifcuti+machgun+othrweap;
 
 #Weapons
-ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012)
-EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012)
-TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012)
-ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012)
-HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012)
+ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #general summaries
-summary(ChildToTeens)
-summary(EighteenPlus)
-summary(TwentyToThirtyish)
-summary(ThirtyFivePlus)
-summary(HundPlus)
+summary(ChildToTeens);
+summary(EighteenPlus);
+summary(TwentyToThirtyish);
+summary(ThirtyFivePlus);
+summary(HundPlus);
 
 #Summary - Frisk
-summary(ChildToTeensFrisk)
-summary(EighteenPlusFrisk)
-summary(EighteenPlusFrisk)
-summary(ThirtyFivePlusFrisk)
-summary(HundPlusFrisk)
+summary(ChildToTeensFrisk);
+summary(EighteenPlusFrisk);
+summary(EighteenPlusFrisk);
+summary(ThirtyFivePlusFrisk);
+summary(HundPlusFrisk);
 
 ##Summary - Search
-summary(ChildToTeensSearch)
-summary(EighteenPlusSearch)
-summary(TwentyToThirtyishSearch)
-summary(ThirtyFivePlusSearch)
-summary(HundPlusSearch)
+summary(ChildToTeensSearch);
+summary(EighteenPlusSearch);
+summary(TwentyToThirtyishSearch);
+summary(ThirtyFivePlusSearch);
+summary(HundPlusSearch);
 
 #Summary - Contraband
-summary(ChildToTeensContra)
-summary(EighteenPlusContra)
-summary(TwentyToThirtyishContra)
-summary(ThirtyFivePlusContra)
-summary(HundPlusContra)
+summary(ChildToTeensContra);
+summary(EighteenPlusContra);
+summary(TwentyToThirtyishContra);
+summary(ThirtyFivePlusContra);
+summary(HundPlusContra);
 
 #Summary - Arrest
-summary(ChildToTeensArrest)
-summary(EighteenPlusArrest)
-summary(TwentyToThirtyishArrest)
-summary(ThirtyFivePlusArrest)
-summary(HundPlusArrest)
+summary(ChildToTeensArrest);
+summary(EighteenPlusArrest);
+summary(TwentyToThirtyishArrest);
+summary(ThirtyFivePlusArrest);
+summary(HundPlusArrest);
 
 #Summary - Summons
-summary(ChildToTeensSummon)
-summary(EighteenPlusSummon)
-summary(TwentyToThirtyishSummon)
-summary(ThirtyFivePlusSummon)
-summary(HundPlusSummon)
+summary(ChildToTeensSummon);
+summary(EighteenPlusSummon);
+summary(TwentyToThirtyishSummon);
+summary(ThirtyFivePlusSummon);
+summary(HundPlusSummon);
 
 #Summary - Weapons
-summary(ChildToTeensWeapon)
-summary(EighteenPlusWeapon)
-summary(TwentyToThirtyishWeapon)
-summary(ThirtyFivePlusWeapon)
-summary(HundPlusWeapon)
+summary(ChildToTeensWeapon);
+summary(EighteenPlusWeapon);
+summary(TwentyToThirtyishWeapon);
+summary(ThirtyFivePlusWeapon);
+summary(HundPlusWeapon);
 
 # This doesn't work for the model I am approaching*
 # library(MASS)
