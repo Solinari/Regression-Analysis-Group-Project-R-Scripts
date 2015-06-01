@@ -19,50 +19,50 @@ SQF.2012$HundPlus <- factor ( with ( SQF.2012, ifelse ((age > 99),1, 0) ) );
 
 
 #Frisks
-ChildToTeensFrisk <- glm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusFrisk <- glm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishFrisk <- glm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusFrisk <- glm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusFrisk <- glm(frisked ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensFrisk <- glm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial(link="logit"));
+EighteenPlusFrisk <- glm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial(link="logit"));
+TwentyToThirtyishFrisk <- glm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial(link="logit"));
+ThirtyFivePlusFrisk <- glm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial(link="logit"));
+HundPlusFrisk <- glm(frisked ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial(link="logit"));
 
 #Searches
-ChildToTeensSearch <- glm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusSearch <- glm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishSearch <- glm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusSearch <- glm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusSearch <- glm(searched ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensSearch <- glm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial(link="logit"));
+EighteenPlusSearch <- glm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial(link="logit"));
+TwentyToThirtyishSearch <- glm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial(link="logit"));
+ThirtyFivePlusSearch <- glm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial(link="logit"));
+HundPlusSearch <- glm(searched ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial(link="logit"));
 
 #Contraband
-ChildToTeensContra <- glm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusContra <- glm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishContra <- glm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusContra <- glm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusContra <- glm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensContra <- glm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial(link="logit"));
+EighteenPlusContra <- glm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial(link="logit"));
+TwentyToThirtyishContra <- glm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial(link="logit"));
+ThirtyFivePlusContra <- glm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial(link="logit"));
+HundPlusContra <- glm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial(link="logit"));
 
 #Arrests
-ChildToTeensArrest <- glm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusArrest <- glm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishArrest <- glm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusArrest <- glm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusArrest <- glm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensArrest <- glm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial(link="logit"));
+EighteenPlusArrest <- glm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial(link="logit"));
+TwentyToThirtyishArrest <- glm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial(link="logit"));
+ThirtyFivePlusArrest <- glm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial(link="logit"));
+HundPlusArrest <- glm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial(link="logit"));
 
 #Summons 
-ChildToTeensSummon <- glm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusSummon <- glm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishSummon <- glm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusSummon <- glm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusSummon <- glm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensSummon <- glm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial(link="logit"));
+EighteenPlusSummon <- glm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial(link="logit"));
+TwentyToThirtyishSummon <- glm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial(link="logit"));
+ThirtyFivePlusSummon <- glm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial(link="logit"));
+HundPlusSummon <- glm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial(link="logit"));
 
 # make the weapon variable
 attach(SQF.2012)
 SQF.2012$weaponfound <- pistol+riflshot+asltweap+knifcuti+machgun+othrweap;
 
 #Weapons
-ChildToTeensWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
-EighteenPlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
-TwentyToThirtyishWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
-ThirtyFivePlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
-HundPlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
+ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012);
+EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012);
+TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
+ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
+HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012);
 
 #general summaries
 summary(ChildToTeens);
@@ -74,7 +74,7 @@ summary(HundPlus);
 #Summary - Frisk
 summary(ChildToTeensFrisk);
 summary(EighteenPlusFrisk);
-summary(EighteenPlusFrisk);
+summary(TwentyToThirtyishFrisk);
 summary(ThirtyFivePlusFrisk);
 summary(HundPlusFrisk);
 
@@ -114,16 +114,19 @@ summary(ThirtyFivePlusWeapon);
 summary(HundPlusWeapon);
 
 # This doesn't work for the model I am approaching*
-# library(MASS)
-# step1 <- stepAIC(ThirtyFivePlusFrisk, direction="backward")
-# step2 <- stepAIC(HundPlusFrisk, direction="backward")
-# step3 <- stepAIC(ThirtyFivePlusSearch, direction="backward")
-# step4 <- stepAIC(HundPlusSearch, direction="backward")
-# step5 <- stepAIC(ThirtyFivePlusContra, direction="backward")
-# step6 <- stepAIC(HundPlusContra, direction="backward")
-# step7 <- stepAIC(ThirtyFivePlusArrest, direction="backward")
-# step8 <- stepAIC(HundPlusArrest, direction="backward")
-# step9 <- stepAIC(ThirtyFivePlusSummon, direction="backward")
-# step10 <- stepAIC(HundPlusSummon, direction="backward")
-# step11 <- stepAIC(ThirtyFivePlusWeapon, direction="backward")
-# step12 <- stepAIC(HundPlusWeapon, direction="backward")
+ library(MASS)
+# step1 <- stepAIC(ThirtyFivePlusFrisk, direction="both")
+# step2 <- stepAIC(HundPlusFrisk, direction="both")
+# step3 <- stepAIC(ThirtyFivePlusSearch, direction="both")
+# step4 <- stepAIC(HundPlusSearch, direction="both")
+# step5 <- stepAIC(ThirtyFivePlusContra, direction="both")
+# step6 <- stepAIC(HundPlusContra, direction="both")
+# step7 <- stepAIC(ThirtyFivePlusArrest, direction="both")
+# step8 <- stepAIC(HundPlusArrest, direction="both")
+# step9 <- stepAIC(ThirtyFivePlusSummon, direction="both")
+# step10 <- stepAIC(HundPlusSummon, direction="both")
+stepChil <- stepAIC(ChildToTeensWeapon, direction="both")
+stepEigh <- stepAIC(EighteenPlusWeapon, direction="both")
+stepTwen <- stepAIC(TwentyToThirtyishWeapon, direction="both")
+stepThir <- stepAIC(ThirtyFivePlusWeapon, direction="both")
+stepHund <- stepAIC(HundPlusWeapon, direction="both")
