@@ -113,20 +113,21 @@ summary(TwentyToThirtyishWeapon);
 summary(ThirtyFivePlusWeapon);
 summary(HundPlusWeapon);
 
-# This doesn't work for the model I am approaching*
- library(MASS)
-# step1 <- stepAIC(ThirtyFivePlusFrisk, direction="both")
-# step2 <- stepAIC(HundPlusFrisk, direction="both")
-# step3 <- stepAIC(ThirtyFivePlusSearch, direction="both")
-# step4 <- stepAIC(HundPlusSearch, direction="both")
-# step5 <- stepAIC(ThirtyFivePlusContra, direction="both")
-# step6 <- stepAIC(HundPlusContra, direction="both")
-# step7 <- stepAIC(ThirtyFivePlusArrest, direction="both")
-# step8 <- stepAIC(HundPlusArrest, direction="both")
-# step9 <- stepAIC(ThirtyFivePlusSummon, direction="both")
-# step10 <- stepAIC(HundPlusSummon, direction="both")
-stepChil <- stepAIC(ChildToTeensWeapon, direction="both")
-stepEigh <- stepAIC(EighteenPlusWeapon, direction="both")
-stepTwen <- stepAIC(TwentyToThirtyishWeapon, direction="both")
-stepThir <- stepAIC(ThirtyFivePlusWeapon, direction="both")
-stepHund <- stepAIC(HundPlusWeapon, direction="both")
+# # This doesn't work for the model I am approaching*
+#  library(MASS)
+# # step1 <- stepAIC(ThirtyFivePlusFrisk, direction="both")
+# # step2 <- stepAIC(HundPlusFrisk, direction="both")
+# # step3 <- stepAIC(ThirtyFivePlusSearch, direction="both")
+# # step4 <- stepAIC(HundPlusSearch, direction="both")
+# # step5 <- stepAIC(ThirtyFivePlusContra, direction="both")
+# # step6 <- stepAIC(HundPlusContra, direction="both")
+# # step7 <- stepAIC(ThirtyFivePlusArrest, direction="both")
+# # step8 <- stepAIC(HundPlusArrest, direction="both")
+# # step9 <- stepAIC(ThirtyFivePlusSummon, direction="both")
+# # step10 <- stepAIC(HundPlusSummon, direction="both")
+# stepChil <- stepAIC(ChildToTeensWeapon, direction="both")
+# stepEigh <- stepAIC(EighteenPlusWeapon, direction="both")
+# stepTwen <- stepAIC(TwentyToThirtyishWeapon, direction="both")
+# stepThir <- stepAIC(ThirtyFivePlusWeapon, direction="both")
+# stepHund <- stepAIC(HundPlusWeapon, direction="both")
+
