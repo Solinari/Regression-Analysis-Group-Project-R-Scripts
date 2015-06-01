@@ -71,40 +71,91 @@ summary(TwentyToThirtyish);
 summary(ThirtyFivePlus);
 summary(HundPlus);
 
+
 #Summary - Frisk
 summary(ChildToTeensFrisk);
+exp(coef(ChildToTeensFrisk));
+
 summary(EighteenPlusFrisk);
+exp(coef(EighteenPlusFrisk));
+
 summary(TwentyToThirtyishFrisk);
+exp(coef(TwentyToThirtyishFrisk));
+
 summary(ThirtyFivePlusFrisk);
+exp(coef(ThirtyFivePlusFrisk));
+
 summary(HundPlusFrisk);
+exp(coef(HundPlusFrisk));
+
 
 ##Summary - Search
 summary(ChildToTeensSearch);
+exp(coef(ChildToTeensSearch));
+
 summary(EighteenPlusSearch);
+exp(coef(EighteenPlusSearch));
+
 summary(TwentyToThirtyishSearch);
+exp(coef(TwentyToThirtyishSearch));
+
 summary(ThirtyFivePlusSearch);
+exp(coef(ThirtyFivePlusSearch));
+
 summary(HundPlusSearch);
+exp(coef(HundPlusSearch));
+
 
 #Summary - Contraband
 summary(ChildToTeensContra);
+exp(coef(ChildToTeensContra));
+
 summary(EighteenPlusContra);
+exp(coef(EighteenPlusContra));
+
 summary(TwentyToThirtyishContra);
+exp(coef(TwentyToThirtyishContra));
+
 summary(ThirtyFivePlusContra);
+exp(coef(ThirtyFivePlusContra));
+
 summary(HundPlusContra);
+exp(coef(HundPlusContra));
+
 
 #Summary - Arrest
 summary(ChildToTeensArrest);
+exp(coef(ChildToTeensArrest));
+
 summary(EighteenPlusArrest);
+exp(coef(EighteenPlusArrest));
+
 summary(TwentyToThirtyishArrest);
+exp(coef(TwentyToThirtyishArrest));
+
 summary(ThirtyFivePlusArrest);
+exp(coef(ThirtyFivePlusArrest));
+
 summary(HundPlusArrest);
+exp(coef(HundPlusArrest));
+
 
 #Summary - Summons
 summary(ChildToTeensSummon);
+exp(coef(ChildToTeensSummon));
+
 summary(EighteenPlusSummon);
+exp(coef(EighteenPlusSummon));
+
 summary(TwentyToThirtyishSummon);
+exp(coef(TwentyToThirtyishSummon));
+
 summary(ThirtyFivePlusSummon);
+exp(coef(ThirtyFivePlusSummon));
+
 summary(HundPlusSummon);
+exp(coef(HundPlusSummon));
+
 
 #Summary - Weapons
 summary(ChildToTeensWeapon);
