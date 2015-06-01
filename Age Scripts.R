@@ -19,50 +19,50 @@ SQF.2012$HundPlus <- factor ( with ( SQF.2012, ifelse ((age > 99),1, 0) ) );
 
 
 #Frisks
-ChildToTeensFrisk <- lm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusFrisk <- lm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishFrisk <- lm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusFrisk <- lm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusFrisk <- lm(frisked ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensFrisk <- glm(frisked ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusFrisk <- glm(frisked ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishFrisk <- glm(frisked ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusFrisk <- glm(frisked ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusFrisk <- glm(frisked ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 #Searches
-ChildToTeensSearch <- lm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusSearch <- lm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishSearch <- lm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusSearch <- lm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusSearch <- lm(searched ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensSearch <- glm(searched ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusSearch <- glm(searched ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishSearch <- glm(searched ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusSearch <- glm(searched ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusSearch <- glm(searched ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 #Contraband
-ChildToTeensContra <- lm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusContra <- lm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishContra <- lm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusContra <- lm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusContra <- lm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensContra <- glm(contrabn ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusContra <- glm(contrabn ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishContra <- glm(contrabn ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusContra <- glm(contrabn ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusContra <- glm(contrabn ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 #Arrests
-ChildToTeensArrest <- lm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusArrest <- lm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishArrest <- lm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusArrest <- lm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusArrest <- lm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensArrest <- glm(arstmade ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusArrest <- glm(arstmade ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishArrest <- glm(arstmade ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusArrest <- glm(arstmade ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusArrest <- glm(arstmade ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 #Summons 
-ChildToTeensSummon <- lm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusSummon <- lm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishSummon <- lm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusSummon <- lm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusSummon <- lm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensSummon <- glm(sumissue ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusSummon <- glm(sumissue ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishSummon <- glm(sumissue ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusSummon <- glm(sumissue ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusSummon <- glm(sumissue ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 # make the weapon variable
 attach(SQF.2012)
 SQF.2012$weaponfound <- pistol+riflshot+asltweap+knifcuti+machgun+othrweap;
 
 #Weapons
-ChildToTeensWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012);
-EighteenPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012);
-TwentyToThirtyishWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012);
-ThirtyFivePlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012);
-HundPlusWeapon <- lm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012);
+ChildToTeensWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$ChildToTeens, data=SQF.2012, family=binomial());
+EighteenPlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$EighteenPlus, data=SQF.2012, family=binomial());
+TwentyToThirtyishWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$TwentyToThirtyish, data=SQF.2012, family=binomial());
+ThirtyFivePlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$ThirtyFivePlus, data=SQF.2012, family=binomial());
+HundPlusWeapon <- glm(SQF.2012$weaponfound ~ SQF.2012$HundPlus, data=SQF.2012, family=binomial());
 
 #general summaries
 summary(ChildToTeens);
